@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.7;
+
+// Write a program to reverse the number
+contract SolidityStorage {
+
+    function reverse(int a) public pure returns (int) {
+        int b = 0;
+        while(a > 0) {
+            b = b*10 + (a % 10);
+            a /= 10;
+        }
+        return b;
+    }
+}
