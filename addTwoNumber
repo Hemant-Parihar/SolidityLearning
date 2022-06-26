@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.7;
+
+ // write a program that will take two number, set two public number and return sum.
+contract SolidityStorage {
+    int public a;
+    int public b;
+
+    function sum(int _a, int _b) public returns (int) {
+        a = _a;
+        b = _b;
+        return a + b;
+    }
+}
